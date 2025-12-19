@@ -1,11 +1,14 @@
 # Overview
-This repo aims to showcase the basic functionality of a RAG (resource augmented generation) application, utilizing a soccer training PDF markdown, to provide the User precise instructions on how to improve their technical and tactical awareness.
+This repo aims to showcase the basic functionality of a RAG (resource augmented generation) application, utilizing a soccer training PDF markdown, to provide the User precise instructions on how to improve their technical and tactical awareness. The llm is told that is a tactical soccer coaching assistant who answers questions using provided training materials.
+The **temperature** setting is set to 0, to generate more factual reponses based on the markdown file provided.
 # Libraries
+The text Embeddings for this RAG project are generated using the OpenAI api library, specifically the "text-embedding-3-small", which is a cost-effective model to encode semantic relationships in a higher dimensional space (1536 dim)
+
 ```
 pip3 install -r requirements.txt
 ```
 # API Usage
-This RAG demo used OpenAI's API, for which you must generate a key, and add it to an environmental variable, for safely loading it in the embedding script.
+This RAG demo used OpenAI's API, for which you must generate a key, and add it to an environmental variable, for safely loading it in the embedding script. Usage for Embeddings and Tokens can be monitored in the OpenAI dashboard.
 # Functionality
 Clone the repo into your local system, run the libararies installation, and then generate OpenAI embedings with
 ```
