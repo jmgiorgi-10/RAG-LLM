@@ -1,9 +1,10 @@
 # Overview
-This repo aims to showcase the basic functionality of a RAG (resource augmented generation) application, utilizing a soccer training PDF markdown, to provide the User precise instructions on how to improve their technical and tactical awareness. The llm is told that is a tactical soccer coaching assistant who answers questions using provided training materials.
+- This repo aims to showcase the basic functionality of a RAG (resource augmented generation) application, utilizing a soccer training PDF markdown, to provide the User precise instructions on how to improve their technical and tactical awareness.
+- The llm is told that is a tactical soccer coaching assistant who answers questions using provided training materials.
 The **temperature** setting is set to 0, to generate more factual reponses based on the markdown file provided.
 # Libraries
-An important aspect of RAG applications is a structured pre-processing of the Text or Tabular data, to seperate it into "chunks" that are ideally self-contained and grouped by meaning. For this, we leverage the LangChain library, and sequentially utilize semantic (Chapter + Excercise), header, and recursive splitting of the markdown text.
-The text Embeddings for this RAG project are generated using the OpenAI api library, specifically the "text-embedding-3-small", which is a cost-effective model to encode semantic relationships in a higher dimensional space (1536 dim)
+- An important aspect of RAG applications is a structured pre-processing of the Text or Tabular data, to seperate it into "chunks" that are ideally self-contained and grouped by meaning. For this, we leverage the LangChain library, and sequentially utilize semantic (Chapter + Excercise), header, and recursive splitting of the markdown text.
+- The text Embeddings for this RAG project are generated using the OpenAI api library, specifically the "text-embedding-3-small", which is a cost-effective model to encode semantic relationships in a higher dimensional space (1536 dim)
 
 ```
 pip3 install -r requirements.txt
